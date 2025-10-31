@@ -1,0 +1,19 @@
+Script started on Fri Oct 31 00:38:04 2025
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[?1034h[maliqade@r1n03 CISC372_picProject]$ echo "=== Testing Pthread Version ==="
+=== Testing Pthread Version ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image pic1.jpg blur
+Processing 4032x3024 image (3 channels) with 4 threads...
+Convolution took 0 seconds with 4 threads
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo "=== Testing OpenMP Version ==="
+=== Testing OpenMP Version ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image_OpenMP pic1.jpg blur
+Took 7 seconds
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo "=== Creating Edge Detection Output ==="
+=== Creating Edge Detection Output ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image pic1.jpg edge
+Processing 4032x3024 image (3 channels) with 4 threads...
+Convolution took 0 seconds with 4 threads
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ exit
+exit
+
+Script done on Fri Oct 31 00:39:08 2025

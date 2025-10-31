@@ -1,0 +1,22 @@
+Script started on Fri Oct 31 00:33:52 2025
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[?1034h[maliqade@r1n03 CISC372_picProject]$ echo "=== Testing Pthread Version ==="
+=== Testing Pthread Version ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image pic1.jpg blur
+mage pic1.jpg edgeProcessing 4032x3024 image (3 channels) with 4 threads...
+Convolution took 1 seconds with 4 threads
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo ""
+
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo "=== Testing OpenMP Version ==="
+=== Testing OpenMP Version ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image_OpenMP pic1.jpg blur
+Took 7 seconds
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo ""
+
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ echo "=== Creating Edge Detection Output ==="
+=== Creating Edge Detection Output ===
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ srun ./image pic1.jpg edgeui                            echo "=== Creating Edge Detection Output ===""[Ksrun ./image_OpenMP pic1.jpg blurecho "=== Testing OpenMP Version ===""[Ksrun ./image pic1.jpg blurecho "=== Testing Pthread Version ==="                                   exit
+sh: echexit: command not found
+]0;maliqade@r1n03.darwin:~/CISC372_picProject[maliqade@r1n03 CISC372_picProject]$ r exit
+exit
+
+Script done on Fri Oct 31 00:35:37 2025
